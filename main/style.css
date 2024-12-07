@@ -1,0 +1,123 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2a005e, #8e00d4); /* Gradient Background */
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #000; /* Black background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* White text */
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo h1 a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin: 0 15px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff; /* White text */
+  transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.nav-icons .icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2); /* Slight brightness increase */
+}
+
+/* Intro Section Styles */
+#intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2a005e, #8e00d4); /* Same gradient as body */
+  color: #fff; /* White text */
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Smooth fade out */
+}
+
+/* Home Section Styles */
+#home {
+  height: 100vh;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2a005e, #8e00d4); /* Same gradient as body */
+  color: #fff;
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 1s ease-in; /* Smooth fade in */
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-size: 0.9rem;
+  margin-top: 20px;
+}

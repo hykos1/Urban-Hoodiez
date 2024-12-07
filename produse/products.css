@@ -1,0 +1,146 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2a005e, #8e00d4); /* Gradient Background */
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #000; /* Black background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Products Section */
+#products {
+    padding: 50px 5%;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.product-image .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-image:hover .hover-img {
+    opacity: 1;
+}
+
+.product-image:hover .default-img {
+    opacity: 0;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Hoodie</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #4B0082, #800080);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #2d0030;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .image-gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .image-gallery div {
+            background-color: #ccc;
+            aspect-ratio: 1 / 1;
+        }
+
+        .image-gallery div:nth-child(1) {
+            grid-column: span 2;
+        }
+
+        .product-details {
+            flex: 1;
+            background-color: #3b0050;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product-details h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-details .price {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .product-details .size-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .size-options button {
+            background: none;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quantity button {
+            width: 30px;
+            height: 30px;
+            background: none;
+            border: 1px solid white;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .product-details button {
+            background-color: white;
+            color: #3b0050;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #2d0030;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Urban Hoodiez</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="image-gallery">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="product-details">
+            <h2>Angel Urban Hoodiez Black</h2>
+            <div class="price">160 RON</div>
+
+            <div class="size-options">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+                <button>2XL</button>
+                <button>3XL</button>
+            </div>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button>Add to cart</button>
+            <button>Buy it now</button>
+
+            <div class="description">
+                <p>Who knew that the softest hoodie you’ll ever own comes with such a cool design? You won’t regret buying this classic streetwear piece of apparel with a convenient pouch pocket and warm hood for chilly evenings.</p>
+                <ul>
+                    <li>100% cotton face</li>
+                    <li>65% ring-spun cotton, 35% polyester</li>
+                    <li>Front pouch pocket</li>
+                    <li>Self-fabric patch on the back</li>
+                    <li>Matching flat drawstrings</li>
+                    <li>3-panel hood</li>
+                    <li>Blank product sourced from Pakistan</li>
+                </ul>
+                <p><strong>Disclaimer:</strong> This hoodie runs small. For the perfect fit, we recommend ordering one size larger than your usual size.</p>
+                <p>This product is made especially for

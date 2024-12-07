@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2a005e, #8e00d4); /* Gradient similar intro */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semitransparent pentru a se integra cu gradientul */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+.logo h1 a {
+    text-decoration: none;
+    color: inherit; /* Folosește culoarea definită pentru h1 */
+}
+
+.logo h1 a:hover {
+    color: #ccc; /* Efect opțional de hover */
+}  
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ccc;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 5%;
+    color: #fff;
+}
+
+#contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); /* Fundal transparent pentru integrare cu gradientul */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+#contact input::placeholder, #contact textarea::placeholder {
+    color: #ccc;
+}
+
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8e00d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#contact button:hover {
+    background-color: #a844e8;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+

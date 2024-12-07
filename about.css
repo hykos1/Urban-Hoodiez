@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-menu ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #000;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icons .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .nav-icons .icon:hover {
+    transform: scale(1.1);
+  }
+  
