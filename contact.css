@@ -18,43 +18,54 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semitransparent pentru a se integra cu gradientul */
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.logo h1 {
+  }
+  
+  .logo h1 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-}
-
-.nav-menu ul {
+  }
+  
+  .logo h1 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .logo h1 a:hover {
+    color: #ccc;
+  }
+  
+  .logo-image {
+    margin: 0 20px;
+  }
+  
+  .logo-image img {
+    height: 80px; /* Dimensiune mai mare pentru logo */
+    width: auto; /* Păstrează proporțiile imaginii */
+  }
+  
+  
+  .nav-menu ul {
     display: flex;
     list-style: none;
-}
-.logo h1 a {
-    text-decoration: none;
-    color: inherit; /* Folosește culoarea definită pentru h1 */
-}
-
-.logo h1 a:hover {
-    color: #ccc; /* Efect opțional de hover */
-}  
-
-.nav-menu ul li {
+  }
+  
+  .nav-menu ul li {
     margin: 0 15px;
-}
-
-.nav-menu ul li a {
+  }
+  
+  .nav-menu ul li a {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
     transition: color 0.3s;
-}
-
-.nav-menu ul li a:hover {
+  }
+  
+  .nav-menu ul li a:hover {
     color: #ccc;
-}
+  }
 
 /* Contact Section */
 #contact {

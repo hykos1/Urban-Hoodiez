@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2a005e, #8e00d4); /* Gradient Background */
+  background: linear-gradient(135deg, #2a005e, #8e00d4);
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -19,14 +19,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
-  background-color: #000; /* Black background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #fff; /* White text */
+  color: #fff;
 }
 
 .logo h1 a {
@@ -35,8 +35,18 @@ body {
 }
 
 .logo h1 a:hover {
-  color: #ccc; /* Light gray on hover */
+  color: #ccc;
 }
+
+.logo-image {
+  margin: 0 20px;
+}
+
+.logo-image img {
+  height: 80px; /* Dimensiune mai mare pentru logo */
+  width: auto; /* Păstrează proporțiile imaginii */
+}
+
 
 .nav-menu ul {
   display: flex;
@@ -50,74 +60,119 @@ body {
 .nav-menu ul li a {
   text-decoration: none;
   font-size: 16px;
-  color: #fff; /* White text */
+  color: #fff;
   transition: color 0.3s;
 }
 
 .nav-menu ul li a:hover {
-  color: #ccc; /* Light gray on hover */
+  color: #ccc;
 }
 
-.nav-icons {
-  display: flex;
-  align-items: center;
-}
 
-.nav-icons .icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
 
-.nav-icons .icon:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2); /* Slight brightness increase */
-}
-
-/* Intro Section Styles */
-#intro {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, #2a005e, #8e00d4); /* Same gradient as body */
-  color: #fff; /* White text */
-  opacity: 1;
-  transition: opacity 1s ease-out; /* Smooth fade out */
-}
-
-/* Home Section Styles */
-#home {
-  height: 100vh;
-  display: none; /* Initially hidden */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, #2a005e, #8e00d4); /* Same gradient as body */
+/* Hero Section */
+.hero {
+  display: flex; /* Activează Flexbox */
+  flex-direction: column; /* Elemente pe verticală */
+  justify-content: center; /* Centrează vertical */
+  align-items: center; /* Centrează orizontal */
+  background: linear-gradient(135deg, #2a005e, #8e00d4);
   color: #fff;
-  opacity: 0; /* Start fully transparent */
-  transition: opacity 1s ease-in; /* Smooth fade in */
+  text-align: center; /* Aliniere text în centru */
+  padding: 60px 20px; /* Spațiu interior */
+  min-height: 100vh; /* Ocupă înălțimea completă a ecranului */
 }
 
-#home h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero .logo {
+  max-width: 500px; /* Face imaginea mai mare */
+  width: 100%; /* Asigură scalarea imaginii */
 }
 
-#home p {
-  font-size: 1.2rem;
+.hero h1 {
+  font-size: 2.5rem; /* Text mai mare pentru titlu */
+  margin: 20px 0; /* Spațiu între imagine și text */
 }
 
-/* Footer Styles */
+.hero .button {
+  padding: 15px 30px; /* Buton mai mare */
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px; /* Spațiu între text și buton */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .button:hover {
+  background-color: #000;
+  color: #fff; /* Efect hover */
+}
+
+/* Featured Products Section */
+.featured-products {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.featured-products h2 {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product {
+  text-align: center;
+  width: 200px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-image .back-image {
+  opacity: 0;
+}
+
+.product-image:hover .front-image {
+  opacity: 0;
+}
+
+.product-image:hover .back-image {
+  opacity: 1;
+}
+
+.product p {
+  margin: 10px 0;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  background-color: #000;
+  color: #fff;
   font-size: 0.9rem;
   margin-top: 20px;
 }

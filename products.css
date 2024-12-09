@@ -19,54 +19,58 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: #000; /* Black background */
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.logo h1 {
+  }
+  
+  .logo h1 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-}
-
-.logo h1 a {
+  }
+  
+  .logo h1 a {
     text-decoration: none;
     color: inherit;
-}
-
-.nav-menu ul {
+  }
+  
+  .logo h1 a:hover {
+    color: #ccc;
+  }
+  
+  .logo-image {
+    margin: 0 20px;
+  }
+  
+  .logo-image img {
+    height: 80px; /* Dimensiune mai mare pentru logo */
+    width: auto; /* Păstrează proporțiile imaginii */
+  }
+  
+  
+  .nav-menu ul {
     display: flex;
     list-style: none;
-}
-
-.nav-menu ul li {
+  }
+  
+  .nav-menu ul li {
     margin: 0 15px;
-}
-
-.nav-menu ul li a {
+  }
+  
+  .nav-menu ul li a {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
     transition: color 0.3s;
-}
-
-.nav-icons {
-    display: flex;
-    align-items: center;
-}
-
-.nav-icons .icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #ccc;
+  }
 
 /* Products Section */
 #products {
     padding: 50px 5%;
-    background-color: #fff;
     color: #333;
     text-align: center;
 }
@@ -74,6 +78,7 @@ body {
 #products h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: white;
 }
 
 .product-grid {
